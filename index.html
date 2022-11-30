@@ -15,22 +15,26 @@
   <body>
 
     <body>
-      <div class="container">
-        <div class="weather details">
-          <h1 class="temperature">-°F</h1>
-          <h1 class="status"></h1>
-          <h1 class="humidity"></h1>
-          <h1 class="icon"></h1>
-          <div class="locaiton">
-            <p>city</p>
-            <p>state</p>
-            <p>date</p>
+      <section>
+        <div class="container">
+          <div class="weatherdetails">
+            <h1 class="temperature">-°F</h1>
+            <h1 class="status"></h1>
+            <h1 class="humidity"></h1>
+            <h1 class="wind speed"></h1>
+            <h1 class="icon"></h1>
+            <div class="search">
+              <p>city</p>
+              <p>state</p>
+              <p>date</p>
+            </div>
           </div>
           <form>
             <input type="text" placeholder="Search City..."
-              name="location">
+              name="search">
             <button type="submit">
-              <ion-icon name="play-outline"></ion-icon>
+              <ion-icon name="chevron-forward-outline">
+              </ion-icon>
             </button>
           </form>
         </div>
