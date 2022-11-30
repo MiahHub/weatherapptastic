@@ -1,0 +1,29 @@
+
+u7* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_501,q_50,w_1216/v1/clients/utahddm/_6854ef3a-e563-4ae7-889b-03a7d34a8563.07eec82311.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+}
+.container {
+  height: 20rem;
+  width: 15rem;
+  background-color: rgb(143, 216, 250);
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 16px;
+  border: 1px solid rgb(177, 174, 174);
+}
