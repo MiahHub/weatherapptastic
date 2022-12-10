@@ -6,43 +6,67 @@
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="assets\style.css">
     <link rel="icon" href="./favicon.ico"
       type="image/x-icon">
+    <title>5 Day Forcast</title>
   </head>
 
   <body>
 
-    <body>
-      <section>
-        <div class="container">
-          <div class="weatherdetails">
-            <h1 class="temperature">-°F</h1>
-            <h1 class="status"></h1>
-            <h1 class="humidity"></h1>
-            <h1 class="wind speed"></h1>
-            <h1 class="icon"></h1>
-            <div class="search">
-              <p>city</p>
-              <p>state</p>
-              <p>date</p>
-            </div>
-          </div>
-          <form>
-            <input type="text" placeholder="Search City..."
-              name="search">
-            <button type="submit">
-              <ion-icon name="chevron-forward-outline">
-              </ion-icon>
-            </button>
-          </form>
-        </div>
-        <script src="code.js"></script>
-        <script type="module"
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
 
-</html>
+    <div class="weather-container">
+      <div class="weather-header">
+        <p>Saturday 10:30 AM</p>
+        <h2>Salt Lake City</h2>
+      </div>
+
+      <div class="weather-body">
+
+      </div>
+
+
+
+      <script src="assets\weather.js"></script>
+
+      <h1>Welcome to the 5 day Forcast</h1>
+
+      <!-- <body>
+        <div id="example1"></div>
+        <section>
+          <div class="container">
+            <div class="weatherdetails">
+              <h1 class="temperature">-°F</h1>
+              <h1 class="status"></h1>
+              <h1 class="humidity"></h1>
+              <h1 class="wind speed"></h1>
+              <h1 class="icon"></h1>
+              <div class="search">
+                <p>city</p>
+                <p>state</p>
+                <p>date</p>
+              </div>
+            </div>
+            <form>
+              <input type="text" placeholder="Search City..."
+                name="search" id="search">
+              <button type="submit">
+                <ion-icon name="chevron-forward-outline">
+                </ion-icon>
+              </button>
+            </form>
+          </div>
+          <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+      <script src="const.js"></script>
+      <script src="assets\weather.js"></script>
+      <script src="init.js"></script>
+      <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></scrip >
+                <script nomodule
+                  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+  
+  </html>
