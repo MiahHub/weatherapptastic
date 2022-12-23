@@ -14,118 +14,55 @@
 
   <body>
 
-
     <div class="weather-container">
       <h1>Welcome to the 5 day Forcast</h1>
-      <div class="weather-header">
+      <form class="form">
+        <input id="searchCity" type="text"
+          placeholder="Search City...">
+        <button type="submit" id="submit">
+          <ion-icon name="chevron-forward-outline">
+          </ion-icon>
+        </button>
+      </form>
+      <div class="search-history"></div>
+      <div class="weather-header" id="currentWeather">
         <p>Saturday 10:30 AM</p>
-        <h2>Salt Lake City</h2>
+        <h2 id="city-name">Salt Lake City</h2>
       </div>
 
-      <div class="weather-body">
+      <div class="weather-body" id="forecastWeather">
         <div class="weather-icon"></div>
         <img src="assets\icons\01d.png" alt="icon">
-      </div>
-
-      <div class="weather-temperature">
-        <div class="weather-temperature-main"></div>
-        <div class="weather temp value">
-          32
-          <div class="weather-temp-measure">
-            <p>°F<br>
-              MIN 32°F
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="weather-pressure-humidity">
-        <div class="weather pressure">
-          93%
-        </div>
-        <div class="weather-wind">
-          <div class="weather wind">
-            9 MPH
-          </div>
-        </div>
-      </div>
-      <div class="weather-footer-forcast">
-        <div class="weather-forcast-d1">
-          <h4>Monday</h4>
-          <img src="assets\icons\11d.png"
-            alt="another icon">
-          <p>45°F</p>
-        </div>
-        <div class="weather-forcast-d2">
-          <h4>Tuesday</h4>
-          <img src="assets\icons\11d.png"
-            alt="another icon">
-          <p>45°F</p>
-        </div>
-        <div class="weather-forcast-d2">
-          <h4>Wednesday</h4>
-          <img src="assets\icons\11d.png"
-            alt="another icon">
-          <p>45°F</p>
-        </div>
-        <div class="weather-forcast-d4">
-          <h4>Thursday</h4>
-          <img src="assets\icons\11d.png"
-            alt="another icon">
-          <p>45°F</p>
-        </div>
-        <div class="weather-forcast-d5">
-          <h4>Firday</h4>
-          <img src="assets\icons\11d.png"
-            alt="another icon">
-          <p>45°F</p>
-        </div>
-
-
-
-      </div>
-    </div>
-  </body>
-  <script src=" assets\weather.js"></script>
-
-
-
-  <!-- <body>
-        <div id="example1"></div>
-        <section>
-          <div class="container">
-            <div class="weatherdetails">
-              <h1 class="temperature">-°F</h1>
-              <h1 class="status"></h1>
-              <h1 class="humidity"></h1>
-              <h1 class="wind speed"></h1>
-              <h1 class="icon"></h1>
-              <div class="search">
-                <p>city</p>
-                <p>state</p>
-                <p>date</p>
-              </div>
+        <div class="weather-temperature">
+          <div class="weather-temperature-main"></div>
+          <div class="weather temp value">
+            32
+            <div class="weather-temp-measure">
+              <p>°F<br>
+                MIN 32°F
+              </p>
             </div>
-            <form>
-              <input type="text" placeholder="Search City..."
-                name="search" id="search">
-              <button type="submit">
-                <ion-icon name="chevron-forward-outline">
-                </ion-icon>
-              </button>
-            </form>
           </div>
-          <script
-            src="https://code.jquery.com/jquery-3.6.1.min.js"
-            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-            crossorigin="anonymous"></script>
-      <script src="const.js"></script>
-      <script src="assets\weather.js"></script>
-      <script src="init.js"></script>
-      <script type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></scrip >
-                <script nomodule
-                  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
-  
-  </html>
+        </div>
+
+        <div class="weather-pressure-humidity">
+          <div class="weather pressure">
+            93%
+          </div>
+          <div class="weather-wind">
+            <div class="weather wind">
+              9 MPH
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-forcast">
+        <!-- all the js created divs go here-->
+      </div>
+
+  </body>
+  <script src=" assets/weather.js"></script>
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
